@@ -12,15 +12,18 @@
     <modules>
         <module>lombok</module>
         <module>singleton</module>
+        <module>spring-beans</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
 
+        <spring.version>5.2.9.RELEASE</spring.version>
         <lombok.version>1.18.16</lombok.version>
         <junit.version>5.7.0</junit.version>
         <assertj.version>3.17.2</assertj.version>
+        <logback.version>1.2.3</logback.version>
     </properties>
 
     <dependencies>
@@ -29,6 +32,18 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
         </dependency>
 
         <dependency>
